@@ -1,0 +1,34 @@
+@import url(/css/null.css);
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.opis{
+	padding: 30px 25% 0px 25%;
+	font-size: 18px;
+	letter-spacing: 1.0px;
+	& p{
+		padding-bottom: 30px;
+	}
+	}
+	
+.glav{
+	padding: 30px 25% 0px 25%;
+	font-size: 24px;
+	text-align: center;
+	border-bottom: 1px solid black;
+	height: 1000px;
+	}
+
+.case{
+	background: blue url(/img/case.png) center no-repeat;
+	background-size: 30px;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	right: 0;
+	bottom: 0;
+	margin: 50px;
+}

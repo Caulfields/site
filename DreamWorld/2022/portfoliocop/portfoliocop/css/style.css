@@ -1,12 +1,14 @@
 @import url(/css/null.css);
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ededed;
 }
 
 .opis {
   padding: 30px 25% 0px 25%;
   font-size: 18px;
   letter-spacing: 1px;
+  line-height: 1.2;
 }
 .opis p {
   padding-bottom: 30px;
@@ -17,7 +19,6 @@ body {
   font-size: 24px;
   text-align: center;
   border-bottom: 1px solid black;
-  height: 1000px;
 }
 
 .case {
@@ -30,4 +31,11 @@ body {
   right: 0;
   bottom: 0;
   margin: 50px;
+}
+
+.link {
+  padding: 30px 25% 0px 25%;
+}
+.link p {
+  padding-bottom: 10px;
 }

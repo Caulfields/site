@@ -1,0 +1,35 @@
+@import url(/css/null.css);
+.wrapper {
+  height: 100%;
+  overflow: auto;
+  min-width: 100%;
+  padding: 50px;
+}
+
+.block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 2000px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 20px solid blue;
+  margin: 0px 0px 20px 0px;
+}
+
+.block__column {
+  border: 20px solid green;
+}
+
+.block__item {
+  background-color: crimson;
+  padding: 50px;
+  font-size: 50px;
+  color: bisque;
+  font-weight: 700;
+}

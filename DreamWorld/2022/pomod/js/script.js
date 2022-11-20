@@ -16,7 +16,7 @@ let timeInt = null;
 //Первый таймер
 document.getElementById("time__10").innerHTML = `${timeLeft(10)}`;
 
-function startTimer(timeConst, timePos) {
+function startTimer(timeConst) {
 	let timeLimit = timeConst;
 	timeInt = setInterval (() => {
 		timePassed = timePassed += 1;
@@ -25,16 +25,30 @@ function startTimer(timeConst, timePos) {
 			return;
 		} else {
 			//Находить последний див 
-		document.getElementById(timePos).innerHTML = timeLeft(timeLimit);
+		document.getElementById("time__10").innerHTML = timeLeft(timeLimit);
+		};
+	}, 1000);
+};
+
+function startTimer2(timeConst) {
+	let timeLimit = timeConst;
+	timeInt = setInterval (() => {
+		timePassed = timePassed += 1;
+		timeLimit = timeConst - timePassed;
+		if (timeLimit < 0) {
+			return;
+		} else {
+			//Находить последний див 
+		document.getElementById("time__20").innerHTML = timeLeft(timeLimit);
 		};
 	}, 1000);
 };
 
 const startButton = document.getElementById("start1");
-startButton.addEventListener('click', () => startTimer(10, "time__10"));
+startButton.addEventListener('click', () => startTimer(10));
 
 //Второй таймер
 document.getElementById("time__20").innerHTML = `${timeLeft(20)}`;
 
 const startButton2 = document.getElementById("start2");
-startButton2.addEventListener('click', () => startTimer(20, "time__20"));
+startButton2.addEventListener('click', () => startTimer2(20));

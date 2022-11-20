@@ -1,0 +1,38 @@
+@import url(/css/null.css);
+
+.wrapper {
+	height: 100%;
+	overflow: auto;
+	min-width: 100%;
+	padding: 50px;
+}
+
+.block {
+
+}
+
+.block__row {
+	display: flex;
+	margin: 0px 0px 20px 0px;
+}
+
+.block__column {
+	border: 20px solid green;
+}
+
+.block__column_1 {
+}
+
+.block__column_2 {
+}
+
+.block__column_3 {
+}
+
+.block__item {
+	background-color: crimson;
+	padding: 50px;
+	font-size: 50px;
+	color: bisque;
+	font-weight: 700;
+}

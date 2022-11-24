@@ -17,6 +17,8 @@ body {
   font-family: Roboto;
   font-size: 13px;
   font-weight: 700;
+  position: relative;
+  z-index: 2;
 }
 
 .buttom_menu:hover {
@@ -34,6 +36,8 @@ h1 {
   letter-spacing: 0.05em;
   text-align: left;
   margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
@@ -44,6 +48,8 @@ h2 {
   letter-spacing: 0em;
   text-align: left;
   max-width: 500px;
+  position: relative;
+  z-index: 2;
 }
 
 .order_button {
@@ -57,5 +63,23 @@ h2 {
   font-weight: 400;
   line-height: 52px;
   letter-spacing: 0em;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.order_button:hover {
+  background-color: #3900e2;
+}
+
+#brick1 {
+  position: absolute;
+  right: 44px;
+  top: 5px;
+  z-index: 1;
 }

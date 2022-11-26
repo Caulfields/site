@@ -1,7 +1,7 @@
 @import url(/css/null.css);
 body {
   color: white;
-  background-color: #282828;
+  background-color: black;
   padding-left: 100px;
 }
 
@@ -82,4 +82,89 @@ h2 {
   right: 44px;
   top: 5px;
   z-index: 1;
+}
+
+.bullet_ul {
+  margin-top: 244px;
+  max-width: 439px;
+  display: -ms-grid;
+  display: grid;
+  gap: 70px;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38px;
+  letter-spacing: 0em;
+}
+
+.bullet_block {
+  position: relative;
+  padding-left: 40px;
+}
+.bullet_block::before {
+  content: " ";
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.bullet_text {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#brick2 {
+  position: absolute;
+  right: 44px;
+  top: 740px;
+  z-index: 1;
+}
+
+.chance {
+  font-family: Buyan;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 105px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-top: 390px;
+}
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.one_brick1 {
+  width: 273px;
+  height: 412px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.zag {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.text_brick {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
 }

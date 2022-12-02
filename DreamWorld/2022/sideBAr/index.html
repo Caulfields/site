@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>sideBar</title>
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="css/style.css">
+		<meta http-equiv="Content-type" content="text/html;charset=8"/>
+	</head>
+	<body>
+			<nav class="sidebar">
+				<div class="sidebar-inner">
+					<header class="sidebar-header">
+						<button type="button" class="sidebar-burger" onclick="toggleSidebar()"> 
+							<i class='bx bx-menu'></i>
+						</button>
+					</header>
+					<nav class="sidebar-menu">
+						<button type="button">
+							<i class='bx bx-home-alt-2' ></i>
+							<span>Home</span>
+						</button>
+						<button type="button">
+							<i class='bx bx-user'></i>
+							<span>Account</span>
+						</button>
+						<button type="button">
+							<i class='bx bx-cog' ></i>
+							<span>Settings</span>
+						</button>
+					</nav>
+				</div>
+			</nav>
+
+			<script type="text/javascript">
+				const toggleSidebar = () => document.body.classList.toggle("open");
+			</script>
+	</body>
+</html>

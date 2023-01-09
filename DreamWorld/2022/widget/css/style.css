@@ -1,0 +1,99 @@
+@import url(/css/null.css);
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: "Ubuntu";
+  line-height: 1.5;
+  background: #24262a;
+  color: #f9f9f9;
+}
+
+.widget {
+  background: #17181a;
+  width: 20vw;
+  border-radius: 8px;
+}
+
+input {
+  display: none;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
+  height: 140px;
+}
+
+.content__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.content__inner > div {
+  width: inherit;
+  padding: 20px;
+}
+
+label {
+  padding: 20px;
+  font-size: 15px;
+  opacity: 30%;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+  color: #888889;
+}
+
+.buttons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid wheat;
+}
+
+.underline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  height: 3px;
+  background: blue;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.tabs input:nth-child(1):checked ~ .buttons .underline {
+  translate: 0 0;
+}
+
+.tabs input:nth-child(2):checked ~ .buttons .underline {
+  translate: 0 0;
+}
+
+.tabs input:nth-child(3):checked ~ .buttons .underline {
+  translate: 0 0;
+}

@@ -1,0 +1,61 @@
+@import url(/css/null.css);
+
+body {
+	background-color: black;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: 7px 23px 0 23px;
+}
+
+.client-button {
+	display: flex;
+	gap: 25px;
+}
+
+.geo {
+	font-size: 20px;
+	color: gold;
+	background-color: transparent;
+}
+
+.search {
+	font-size: 20px;
+	color: gold;
+	background-color: transparent;
+}
+
+.fav {
+	font-size: 20px;
+	color: gold;
+	background-color: transparent;
+}
+
+.header-name {
+	color: white;
+	font-size: 24px;
+}
+
+.shop-button {
+	font-size: 20px;
+	color: gold;
+	background-color: transparent;
+}
+
+.catalog {
+	display: flex;
+	color: white;
+
+}
+.catalog__kategory {
+}
+.first-page {
+}
+.first-page__categ {
+}
+.first-page__product {
+}
+.block-product {
+}

@@ -1,0 +1,122 @@
+@import url(/css/null.css);
+@font-face {
+	font-family: AstroSpace;
+	src: url(/fonts/AstroSpace.ttf);
+ }
+
+// Colors
+$black: #18171D;
+$primary: #2F80ED;
+$darkblue: #2D283A;
+$white: #fff;
+
+* {
+	background-color: rgb(0, 2, 10);
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.clue {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  transition: all .09s ease-out;
+  
+  &:before {
+    content: attr(data-clue);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    padding: 10px 14px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		linear-gradient(243.18deg, #00427C 0%, #083665 17.88%, #002855 50.22%, #071F38 79.47%, #1A3143 100%),
+		linear-gradient(0deg, #46606F, #46606F);
+    width: 400px;
+    border-radius: 10px;
+    font-size: 16px;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: inherit;
+  }
+  
+  &:hover {
+    background-color: rgba($primary, .3);
+    
+    &:before {
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+      bottom: calc( 100% + 10px );
+    }
+  }
+}
+
+.menu {
+	height: 100%;
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu_row {
+	height: 100%;
+	width: 33.33333%;
+	padding-top: 20px;
+	& .game_name {
+		text-align: center;
+		font-family: AstroSpace;
+		font-size: 3em;
+		color: white;
+	}
+}
+
+.me1 {
+	background-image: url(/img/ms1img.png);
+	background-color: rgb(0, 2, 10);
+}
+
+.me2 {
+	background-image: url(/img/ms2img.png);
+	background-color: rgb(0, 2, 10);
+}
+
+.me3 {
+	background-image: url(/img/ms3img.png);
+	background-color: rgb(0, 2, 10);
+}
+
+.main_text {
+	width: 50%;
+	margin: 0 50% 0 20%;
+}
+
+
+img {
+	border-left: 7px solid rgba(0, 0, 255, 0.2);
+	margin-bottom: 5px;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 30px;
+}
+
+.content-image-caption {
+  font-size: 18px;
+  font-style: italic;
+	margin-bottom: 30px;
+	opacity: .3;
+}

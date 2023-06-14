@@ -58,12 +58,16 @@
   height: 100%;
   width: 33.33333%;
   padding-top: 20px;
+  filter: grayscale(1);
 }
 .menu_row .game_name {
   text-align: center;
   font-family: AstroSpace;
   font-size: 3em;
   color: white;
+}
+.menu_row:hover {
+  filter: grayscale(0);
 }
 
 .me1 {
